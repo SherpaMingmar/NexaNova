@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connection = async () => {
+const connection = async ()=>{
     try {
         const conn = await mongoose.connect('mongodb://127.0.0.1:27017/NexaNovadb');
         if (conn) {
@@ -11,6 +11,6 @@ const connection = async () => {
     }
 };
 
-module.exports = connection;
+module.exports = connection
 
 
